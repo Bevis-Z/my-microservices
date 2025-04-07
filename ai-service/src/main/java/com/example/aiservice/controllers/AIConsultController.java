@@ -1,7 +1,7 @@
 package com.example.aiservice.controllers;
 
 import com.example.aiservice.model.dto.ChatMessageRequest;
-import com.example.aiservice.services.aiConsultService;
+import com.example.aiservice.services.AiConsultService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/consult")
 public class AIConsultController {
 
-    private final aiConsultService consultService;
+    private final AiConsultService consultService;
 
-    public AIConsultController(aiConsultService consultService) {
+    public AIConsultController(AiConsultService consultService) {
         this.consultService = consultService;
     }
 

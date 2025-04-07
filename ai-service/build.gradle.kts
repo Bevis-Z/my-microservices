@@ -19,6 +19,7 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("com.azure:azure-ai-openai:1.0.0-beta.16")
+    implementation("io.github.cdimascio:dotenv-java:3.0.0")
 }
 
 dependencyManagement {

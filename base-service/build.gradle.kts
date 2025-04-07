@@ -18,6 +18,14 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2")
+    implementation("com.baomidou:mybatis-plus-boot-starter:3.5.3")
+    implementation("org.postgresql:postgresql:42.6.0")
+    implementation("com.baomidou:mybatis-plus-generator:3.5.3")
+    implementation("org.freemarker:freemarker:2.3.32")
+
+    compileOnly("org.projectlombok:lombok:1.18.30")
+    annotationProcessor("org.projectlombok:lombok:1.18.30")
 }
 
 dependencyManagement {
