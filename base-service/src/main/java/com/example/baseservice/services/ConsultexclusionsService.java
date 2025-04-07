@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  *  服务类
  * </p>
  *
- * @author you
+ * @author Bowen
  * @since 2025-04-07
  */
 public interface ConsultexclusionsService extends IService<Consultexclusions> {

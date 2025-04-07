@@ -11,14 +11,14 @@ public class Generator {
         FastAutoGenerator.create("jdbc:postgresql://localhost:5432/einstein_db",
                         "postgres", "password")
                 .globalConfig(builder -> {
-                    builder.author("you") // Set the author
-                            .outputDir(System.getProperty("user.dir") + "/base-service/src/main/java/com/example/baseservice") // Set output directory
+                    builder.author("Bowen")
+                            .outputDir(System.getProperty("user.dir") + "/base-service/src/main/java/com/example/baseservice")
                             .commentDate("yyyy-MM-dd")
                             .disableOpenDir(); // Disable open directory after generation
                 })
                 .packageConfig(builder -> {
-                    builder.parent("com.example.baseservice.model") // Set parent package name
-                            .entity("entity") // Entity package name
+                    builder.parent("com.example.baseservice") // Set parent package name
+                            .entity("model.entity") // Entity package name
                             .mapper("mapper") // Mapper package name
                             .service("service") // Service package name
                             .serviceImpl("service.impl") // Service implementation package name
