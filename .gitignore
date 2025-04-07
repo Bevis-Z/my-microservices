@@ -34,6 +34,22 @@ eureka-server/build/libs/
 **/*-SNAPSHOT.jar
 **/build/libs/*-SNAPSHOT.jar
 
+# Secrets and environment variables
+.env
+*.env
+*.env.local
+**/.env.local
+**/application-dev.yml
+**/application-dev.properties
+**/secret*.yml
+**/secret*.properties
+**/credential*.yml
+**/credential*.properties
+**/*secret*
+**/*credential*
+**/*password*
+**/*token*
+
 # IntelliJ IDEA
 .idea/
 *.iws
